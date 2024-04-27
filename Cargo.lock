@@ -168,6 +168,12 @@ source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "baf1de4339761588bc0619e3cbc0120ee582ebb74b53b4efbf79117bd2da40fd"
 
 [[package]]
+name = "dotenv"
+version = "0.15.0"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "77c90badedccf4105eca100756a0b1289e191f6fcbdadd3cee1d2f614f97da8f"
+
+[[package]]
 name = "either"
 version = "1.11.0"
 source = "registry+https://github.com/rust-lang/crates.io-index"
@@ -266,6 +272,7 @@ checksum = "4271d37baee1b8c7e4b708028c57d816cf9d2434acb33a549475f78c181f6253"
 [[package]]
 name = "grpc-proto"
 version = "0.1.0"
+source = "git+https://github.com/gggiulio77/grpc-proto-rust.git#2082f0a8d436fd8daf5c13cd15494a9dbcd89bea"
 dependencies = [
  "prost",
  "tonic",
@@ -276,6 +283,7 @@ dependencies = [
 name = "grpc-server"
 version = "0.1.0"
 dependencies = [
+ "dotenv",
  "grpc-proto",
  "prost",
  "tokio",
